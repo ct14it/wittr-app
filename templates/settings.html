@@ -1,0 +1,78 @@
+<ion-view view-title="Settings">
+	<ion-content class="witter-blue-back">
+
+		<div class="list">
+
+			<div class="item item-toggle">
+				Can Submit Position
+				<label class="toggle toggle-positive">
+					<input type="checkbox" ng-model="wittrService().settings.canSubmit">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</div>
+			<div class="item item-input item-select">
+				<div class="input-label">
+					Submit Interval
+				</div>
+				<select ng-model="wittrService().settings.submitIntervalInMinutes" ng-change="wittrService().setSubmitInterval()">
+					<option value="1">1 Min</option>
+					<option value="5">5 Mins</option>
+					<option value="10">10 Mins</option>
+					<option value="15">15 Mins</option>
+					<option value="30">30 Mins</option>
+					<option value="60">1 Hour</option>
+					<option value="120">2 Hours</option>
+					<option value="240">4 Hours</option>
+					<option value="720">12 Hours</option>
+					<option value="1440">1 day</option>
+					<option value="10080">1 week</option>
+					<option value="43200">1 month</option>
+				</select>
+			</div>
+			<div class="item item-input item-select">
+				<div class="input-label" ng-click="showFuzzPopover($event)">
+					Fuzz amount <span class="icon ion-help-circled"></span>
+				</div>
+				<select ng-model="wittrService().settings.fuzzDistance">
+					<option value="0.0">Your exact location</option>
+					<option value="0.001">Within 50ish metres</option>
+					<option value="0.01">Within 500ish metres</option>
+					<option value="0.1">5Kish</option>
+					<option value="1">50kish</option>
+					<option value="2">100kish</option>
+					<option value="4">400kish</option>
+				</select>
+			</div>
+			<div class="item item-toggle" ng-if="!wittrService().useJavascriptMap">
+				Force Javascript Map*
+				<br/><p><b>*</b> Changing this restarts the app.</p>
+				<label class="toggle toggle-positive">
+					<input type="checkbox" ng-change="wittrService().startMapSystemChange()" ng-model="wittrService().settings.forceJavascriptMap">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</div>
+		</div>
+
+
+		<script id="fuzz-popover.html" type="text/ng-template">
+			<ion-popover-view>
+				<ion-header-bar>
+					<h1 class="title">Fuzz Amount?</h1>
+				</ion-header-bar>
+				<ion-content>
+					<div class="row">
+						<div class="col">
+							When logging your location, it's how accurate the reading is. So if you select "Your exact location", it will report your location as accurately as possible. If you select "500ish metres" it will randomly fuzz your provided position by 500(ish) metres.
+						</div>
+					</div>
+				</ion-content>
+			</ion-popover-view>
+		</script>
+
+	</ion-content>
+</ion-view>
+

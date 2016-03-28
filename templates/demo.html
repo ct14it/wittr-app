@@ -1,0 +1,70 @@
+<ion-view view-title="Demo" hide-nav-bar="true" >
+	<ion-content class="witter-blue-back">
+		<ion-slide-box class="demo">
+
+			<ion-slide>
+				<h1>Welcome to</h1>
+				<img src="img/icon.png"/>
+				<p class="lead">How do you Wittr?</p>
+				<p>You just Wittr.</p>
+			</ion-slide>
+
+			<ion-slide>
+				<h1>It's just a bit of fun.</h1>
+				<p>
+					With <b>{{ appName }}</b>, you're able to see nearby Wittertainees who have also installed the app.
+				</p>
+
+				<div class="row">
+					<div class="col">
+						<img src="img/demo/slide-2.png" class="app"/>
+					</div>
+				</div>
+			</ion-slide>
+
+			<ion-slide>
+
+				<h1><span class="icon ion-map"></span></h1>
+
+				<div class="row">
+					<div class="col">
+						<p class="lead">This is you.</p>
+
+					</div>
+					<div class="col">
+						<img src="img/me.org.png"/>
+						<br/><br/><br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p>And this is another Wittertainee.</p>
+					</div>
+					<div class="col">
+						<img src="img/wittee.org.png"/>
+					</div>
+				</div>
+
+			</ion-slide>
+
+			<ion-slide>
+				<h1><span class="icon ion-android-compass"></span></h1>
+				<p class="lead">
+					So everyone knows exactly where I am?! <b>NO!</b>
+				</p>
+				<p><b>{{appName}}</b> fuzzes up your location before sending it off, you can make it more, or less fuzzy from the Settings menu.</p>
+				<img src="img/demo/slide-3.png" class="app"/>
+			</ion-slide>
+
+			<ion-slide>
+				<h1><span class="icon ion-android-favorite"></span></h1>
+				<p class="lead">
+					That's it!
+				</p>
+				<p>Each time I update the app, I'll announce the changes here. Have fun!</p>
+				<br/><br/><br/>
+				<a ng-click="finishedDemo()" class="button button-positive">Take me to the map!</a>
+			</ion-slide>
+		</ion-slide-box>
+	</ion-content>
+</ion-view>

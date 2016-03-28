@@ -1,0 +1,184 @@
+/* Empty. Add your own CSS if you like */
+
+ng-map {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fullscreen {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#native_map {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll {
+	height: 100%;
+}
+
+@font-face {
+	font-family: "Gill Sans MT";
+	src: url(../fnt/gillsansmt.woff);
+}
+
+* {
+	font-family:'Gill Sans MT';
+}
+
+.witter-blue-back {
+	background-color: #07afd9;
+	color: #fff;
+}
+
+.witter-blue-block {
+	background-color: #82d6eb;
+	color: #000;
+}
+
+.witter-blue-block p {
+	color :#000;
+	margin-top: 0em;
+	margin-bottom: 2em;
+	font-size: inherit;;
+}
+
+.coc-rule.card {
+	border: none;
+	padding: 20px;
+}
+
+.coc-rule .lead{
+	font-size: 125%;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.coc-pdf {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: none !important;
+	background-color: #fff !important;
+}
+
+#frontSpinner svg {
+	fill: #fff;
+	stroke: #fff;
+	height: 200px;
+	width: 100%;
+}
+
+#frontSpinner {
+	width: 100%;
+	height: 200px !important;
+
+}
+
+
+.demo.slider ion-slide {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 40px 40px 10px 40px;
+}
+
+ion-slide h1,ion-slide p{
+	color: #fff;
+	font-family:'Gill Sans MT';
+}
+
+ion-slide h1 {
+	font-size: 44px;
+}
+
+ion-slide p.lead {
+	font-size: 32px;
+	line-height: 36px;
+}
+
+ion-slide p {
+	font-size: 21px;
+	line-height: 23px;
+	margin-bottom:25px;
+}
+
+
+.demo.slider{
+	width: 100%;
+	height: 100%;
+}
+
+.center{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.slider-pager-page {
+	color: #fff !important;;
+}
+
+
+ion-slide img.app {
+	max-width: 50%;
+	border: 1px solid #000;
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
+}
+
+
+.toggle-battenberg input:checked + .track {
+
+	background-color: #ff79cc;
+	border-color: #cc62a4;
+
+}
+
+.toggle-battenberg input:checked + .track .handle {
+
+	background-color: #ffe42e;
+
+}
+
+.bar-footer {
+	height: auto;
+}
+
+.bar-footer .row {
+	padding: 0px;
+
+}
+
+.bar-footer .row .col {
+	text-align: center;
+}

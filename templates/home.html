@@ -1,0 +1,17 @@
+<ion-view view-title="<b>Wittr</b>">
+	<ion-content scroll="false">
+		<div class="fullscreen" map-lazy-load="https://maps.googleapis.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}">
+			<ng-map id="javascript_map"></ng-map>
+		</div>
+
+	</ion-content>
+	<ion-footer-bar class="bar bar-footer bar-positive">
+		<div class="row">
+			<div class="col">
+				<a ng-click="centerOnMe()" class="button button-icon icon ion-navigate ">Centre On Me</a>
+			</div>
+		</div>
+
+		<!--<a ng-click="wittrService().getWittees()" class="button button-icon icon ion-person"></a>-->
+	</ion-footer-bar>
+</ion-view>
